@@ -21,7 +21,7 @@ password_digits=[]
 count=0
 #>= i have not used that because there is one extra iteraton with that. 
 #Suppose if half char is 2 then the loop runs 3 times by comparing (0,1,2) <= 2(0 is also compared not 1 and 2 only)
-#By using > only it's true for only (0,1) not 2<2.
+#By using > only it's true for only (0,1) not 2>2.
 while count<half_characters:
     count=count+1
     random_special=random.choice(specials)
