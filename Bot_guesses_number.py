@@ -22,8 +22,7 @@ while True:
             low_limit=bot_choice+1
         elif "low" in user_input:
             high_limit=bot_choice-1
-            #make the high limit low
-            #by making bot_choice the high limit-1
+            
         else:
             print("Enter something valid.")
         continue
