@@ -36,13 +36,13 @@ while True:
         user_choice = input('Enter your choice: ')
         if user_choice == 'e':
             #Save if the score is higher than the last saved score
-            with open('high_score.txt','w') as high:
-                    if score>last_score:
-                        high.write(str(score))
-                        last_score = score          
+            if score > last_score:
+                with open('high_score.txt','w') as high:
+                    high.write(str(score))
+                last_score = score
             print('You exited')
-            print('Your high score',last_score)                       
-            break 
+            print('Your high score', last_score)
+            break
             
         elif user_choice in choices:
             bot_guess = random.choice(choices)
@@ -54,4 +54,4 @@ while True:
             
         else:
             print('Type correct bro ..')
-          
+            
